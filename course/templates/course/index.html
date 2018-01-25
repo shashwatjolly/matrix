@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	{% load staticfiles %}
+		<title>Matrix-Courses</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{%static 'assets/css/main.css'%}" />
+
+	</head>
+	<body>
+	{% load staticfiles %}
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Matrix <span>IIT Guwahati</span></a></div>
+				<a href="#menu"><span>Menu</span></a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="{% url 'home:index'%}">Home</a></li>
+					<li><a href="{% url 'alumini:index'%}">alumini</a></li>
+					<li><a href="{% url 'current:index'%}">current</a></li>
+					<li><a href="{% url 'course:index'%}">course</a></li>
+				</ul>
+			</nav>
+
+		<h1><p><center>this is the course page</center></p></h1>
+
+		<!-- Scripts -->
+			<script src="{%static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{%static 'assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{%static 'assets/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{%static 'assets/js/skel.min.js' %}"></script>
+			<script src="{%static 'assets/js/util.js' %}"></script>
+			<script src="{%static 'assets/js/main.js' %}"></script>
+
+	</body>
+</html>
